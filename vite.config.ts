@@ -4,7 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/proyak/' : '/',
+  // Change this line to just use '/' since your custom domain is the root
+  base: '/', 
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
